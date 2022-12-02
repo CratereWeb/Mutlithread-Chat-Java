@@ -22,12 +22,10 @@ Le thread client écoute les commandes saisies par l'utilisateur, et imprime `no
 Le thread serveur correspondant écoute son flux d'entrée, et en imprime une notification dans la console côté serveur, puis envoie le message traité 
 qui saisira les messages entrés par l'utilisateur et les enverra vers le flux de sortie du thread serveur, situé sur le port 6500.
 
-Lorsque le serveur reçoit un message
-
 Pour chaque client qui se connecte, le programme serveur créera un thread qu'il ajoutera à la liste de ses threads actifs. 
 **1 client = 1 thread**.
 
-Chaque client pourra alors lancer le programme lui permettant de contacter le serveur sur le 
+Chaque client pourra alors lancer le programme lui permettant de contacter le serveur sur le réseau local, renseigner son pseudonyme, et envoyer/recevoir tous les messages d'autres clients reçus par l'application serveur.
 
 
 
